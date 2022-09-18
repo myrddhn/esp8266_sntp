@@ -83,10 +83,10 @@ static void sntp_example_task(void *arg) {
         if (timeinfo.tm_year < (2016 - 1900)) {
             ESP_LOGE(TAG, "The current date/time error");
         } else {
-            //vTaskSuspendAll();
+            vTaskSuspendAll();
             strftime(strftime_buf, sizeof(strftime_buf), "%Y-%m-%d %X", &timeinfo);
             ESP_LOGI(TAG, "The current date/time is: %s!", strftime_buf);
-            //xTaskResumeAll();
+            xTaskResumeAll();
         }
 
         ESP_LOGI(TAG, "Free heap size: %d\n", esp_get_free_heap_size());
@@ -102,13 +102,13 @@ static void display_task(void *args) {
             u8g2_SetFont(&u8g2, u8g2_font_ncenB14_tr);
             u8g2_DrawStr(&u8g2, 9, 15, "Hello SNTP!");
             u8g2_SetFont(&u8g2, u8g_font_6x12);
-            //vTaskSuspendAll();
+            vTaskSuspendAll();
             strftime(strftime_buf, sizeof(strftime_buf), "%Y-%m-%d", &timeinfo);
             u8g2_DrawStr(&u8g2, 35, 35, strftime_buf);
             strftime(strftime_buf, sizeof(strftime_buf), "%X", &timeinfo);
             u8g2_DrawStr(&u8g2, 40, 50, strftime_buf);
             u8g2_SendBuffer(&u8g2);
-            //xTaskResumeAll();
+            xTaskResumeAll();
         //} while (u8g2_NextPage(&u8g2));
         
         vTaskDelay(250 / portTICK_RATE_MS);
