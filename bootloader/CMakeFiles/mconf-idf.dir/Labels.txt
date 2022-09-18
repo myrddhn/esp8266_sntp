@@ -1,0 +1,13 @@
+# Target labels
+ mconf-idf
+# Source files and their labels
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/CMakeFiles/mconf-idf
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/CMakeFiles/mconf-idf.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/CMakeFiles/mconf-idf-complete.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule

@@ -1,0 +1,28 @@
+esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj: \
+ /root/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_sha.c \
+ /root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader/config/sdkconfig.h \
+ /root/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv/bootloader_sha.h \
+ /root/esp/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/8.4.0/include/stdint.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/stdint.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/machine/_default_types.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/features.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/_newlib_version.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_intsup.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_stdint.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/stdlib.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/machine/ieeefp.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/_ansi.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/newlib.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/config.h \
+ /root/esp/ESP8266_RTOS_SDK/components/esp8266/include/xtensa/config/core-isa.h \
+ /root/esp/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/8.4.0/include/stddef.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/reent.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/_ansi.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/_types.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/machine/_types.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/lock.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/sys/cdefs.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/machine/stdlib.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/alloca.h \
+ /root/esp/xtensa-lx106-elf/xtensa-lx106-elf/sys-include/xlocale.h \
+ /root/esp/ESP8266_RTOS_SDK/components/esp8266/include/esp_sha.h

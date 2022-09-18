@@ -1,0 +1,2 @@
+/home/andi/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ar qc libmain.a CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+/home/andi/esp/xtensa-lx106-elf/bin/xtensa-lx106-elf-ranlib libmain.a

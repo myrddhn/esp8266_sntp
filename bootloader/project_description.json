@@ -1,0 +1,18 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/root/esp/ESP8266_RTOS_SDK/components/bootloader/subproject",
+    "build_dir":          "/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/bootloader",
+    "config_file":        "/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "HEAD-HASH-NOTFOUND",
+    "phy_data_partition": "",
+    "monitor_baud" : "74880",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/root/esp/ESP8266_RTOS_SDK/components/esp8266/Kconfig;/root/esp/ESP8266_RTOS_SDK/components/esp_common/Kconfig;/root/esp/ESP8266_RTOS_SDK/components/log/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/root/esp/ESP8266_RTOS_SDK/components/bootloader/Kconfig.projbuild;/root/esp/ESP8266_RTOS_SDK/components/esptool_py/Kconfig.projbuild;/root/esp/ESP8266_RTOS_SDK/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "esp8266", "esp_common", "esptool_py", "log", "main", "partition_table", "spi_flash", "" ],
+    "build_component_paths" : [ "/root/esp/ESP8266_RTOS_SDK/components/bootloader", "/root/esp/ESP8266_RTOS_SDK/components/bootloader_support", "/root/esp/ESP8266_RTOS_SDK/components/esp8266", "/root/esp/ESP8266_RTOS_SDK/components/esp_common", "/root/esp/ESP8266_RTOS_SDK/components/esptool_py", "/root/esp/ESP8266_RTOS_SDK/components/log", "/root/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main", "/root/esp/ESP8266_RTOS_SDK/components/partition_table", "/root/esp/ESP8266_RTOS_SDK/components/spi_flash", "" ]
+}

@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "make",
+			"targetName": "all",
+			"makeFileRelativePath": "esp-idf/esp_gdbstub/Makefile",
+			"problemMatcher": [],
+			"label": "make: all",
+			"detail": "./esp-idf/esp_gdbstub/Makefile",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

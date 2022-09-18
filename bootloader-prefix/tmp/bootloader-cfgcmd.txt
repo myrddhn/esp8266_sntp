@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DSDKCONFIG=/root/st-device-sdk-c-ref/apps/esp8266/andi/sntp/esp8266_sntp/sdkconfig;-DIDF_PATH=/root/esp/ESP8266_RTOS_SDK;-DIDF_TARGET=esp8266;-DPYTHON_DEPS_CHECKED=1;-DEXTRA_COMPONENT_DIRS=/root/esp/ESP8266_RTOS_SDK/components/bootloader;-DLEGACY_INCLUDE_COMMON_HEADERS=;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'
