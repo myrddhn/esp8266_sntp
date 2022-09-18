@@ -1,3 +1,17 @@
+# Andi's modified SNTP example (see below)
+
+## My changes: 
+  * Add LCD Support
+  * Output date and time on LCD
+
+## ToDo:
+  * I2C Support for temperature sensor and pressure sensor
+  * OWB Support for DS18B20 temperature probe
+  * Merge with MQTT Sample
+
+_________________________________________________________________________________
+
+
 # Example: using LwIP SNTP module and time functions
 
 This example demonstrates the use of LwIP SNTP module to obtain time from Internet servers. See the README.md file in the upper level 'examples' directory for more information about examples.
