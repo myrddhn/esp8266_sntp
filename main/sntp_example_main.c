@@ -25,6 +25,13 @@
 
 #include "lwip/apps/sntp.h"
 
+#define GPIO_OUT_1      14
+#define GPIO_OUT_2      12
+#define GPIO_OUT_3      13
+#define GPIO_OUT_4      15
+
+#define GPIO_OUT_PINS   ((1ULL << GPIO_OUT_1) | (1ULL << GPIO_OUT_2) | (1ULL << GPIO_OUT_3) | (1ULL << GPIO_OUT_4))
+
 static const char *TAG = "sntp_example";
 static char strftime_buf[64];
 static struct tm timeinfo;
@@ -94,6 +101,28 @@ static void sntp_example_task(void *arg) {
     }
 }
 
+static void led_task(void *args) {
+    while (1) {
+        gpio_set_level(GPIO_OUT_1, 1);
+        vTaskDelay(250 / portTICK_PERIOD_MS);
+        gpio_set_level(GPIO_OUT_1, 0);
+        vTaskDelay(250 / portTICK_PERIOD_MS);
+
+        gpio_set_level(GPIO_OUT_2, 1);
+        vTaskDelay(250 / portTICK_PERIOD_MS);
+        gpio_set_level(GPIO_OUT_2, 0);
+        vTaskDelay(250 / portTICK_PERIOD_MS);
+
+        gpio_set_level(GPIO_OUT_3, 1);
+        vTaskDelay(250 / portTICK_PERIOD_MS);
+        gpio_set_level(GPIO_OUT_3, 0);
+        vTaskDelay(250 / portTICK_PERIOD_MS);
+
+        //gpio_set_level(GPIO_OUT_2, 1);
+        //gpio_set_level(GPIO_OUT_3, 1);
+    }
+}
+
 static void display_task(void *args) {
     while (1) {
         //u8g2_FirstPage(&u8g2);
@@ -126,6 +155,17 @@ void app_main() {
     u8g2_SetPowerSave(&u8g2, 0);
     u8g2_SetI2CAddress(&u8g2, 0x78);
 
+    gpio_config_t io_conf;
+    io_conf.intr_type = GPIO_INTR_DISABLE;
+    io_conf.mode = GPIO_MODE_OUTPUT;
+    io_conf.pin_bit_mask = GPIO_OUT_PINS;
+    io_conf.pull_down_en = 1;
+    io_conf.pull_up_en = 1;
+    gpio_config(&io_conf);
+
+
+    gpio_set_level(GPIO_OUT_4, 0);
+
     ESP_ERROR_CHECK(nvs_flash_init());
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
@@ -135,5 +175,6 @@ void app_main() {
     // SNTP service uses LwIP, please allocate large stack space.
     xTaskCreate(sntp_example_task, "sntp_example_task", 2048, NULL, 5, NULL);
     xTaskCreate(display_task, "display task", 1024, NULL, 4, NULL);
+    xTaskCreate(led_task, "LED task", 256, NULL, 3, NULL);
 
 }
